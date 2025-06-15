@@ -1,0 +1,18 @@
+[project]
+name = "volunteer-assignment-and-coordination-platform"
+version = "0.1.0"
+description = "A platform for volunteer assignment and coordination."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django",
+    "djangorestframework",
+    "djoser",
+    "djangorestframework-simplejwt",
+    "django-cors-headers",
+    "drf-spectacular",
+    "psycopg2-binary",
+    "django-redis",
+    "pydantic-settings>=2.9.1",
+    "uvicorn>=0.34.3",
+]
