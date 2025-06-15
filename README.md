@@ -100,9 +100,18 @@ Access the API documentation at `/api/schema/swagger-ui/` or `/api/schema/redoc/
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
-| `/api/auth/token/login/` | POST | Obtain JWT token for authentication |
-| `/api/auth/token/refresh/` | POST | Refresh JWT token |
-| `/api/auth/token/logout/` | POST | Invalidate JWT token |
+| `/api/auth/jwt/create/` | POST | Obtain JWT token for authentication |
+| `/api/auth/jwt/refresh/` | POST | Refresh JWT token |
+| `/api/auth/jwt/verify/` | POST | Verify JWT token validity |
+| `/api/auth/users/` | GET | List all users (admin only) |
+| `/api/auth/users/` | POST | Create a new user (admin only) |
+| `/api/auth/users/{id}/` | GET | Get user details (admin only) |
+| `/api/auth/users/{id}/` | PUT/PATCH | Update user (admin only) |
+| `/api/auth/users/{id}/` | DELETE | Delete user (admin only) |
+| `/api/auth/users/me/` | GET | Get current user details |
+| `/api/auth/users/me/` | PUT/PATCH | Update current user |
+| `/api/auth/users/me/` | DELETE | Delete current user |
+| `/api/auth/users/set_password/` | POST | Change password |
 
 ### Workplaces Management
 
