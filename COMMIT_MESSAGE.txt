@@ -1,19 +1,6 @@
-Initial commit: Volunteer Assignment and Coordination Platform
+Add create_admin_user management command
 
-This commit establishes the foundation of the Volunteer Assignment and Coordination Platform, a web application designed for coordinating volunteers and assigning them to specific tasks at different workplaces.
-
-Implemented:
-- Basic Django project structure with Django 5.2.3
-- PostgreSQL database integration with psycopg2-binary
-- Redis caching implementation with django-redis
-- REST API configuration with Django REST Framework
-- JWT authentication using Djoser and Simple JWT
-- API documentation setup with drf-spectacular
-- Standardized API responses with custom renderers and exception handlers
-- Docker and Docker Compose setup for containerized development environment
-
-The platform features a uniform API response format, custom pagination, and a comprehensive error handling system to ensure a consistent developer experience.
-
-Author: Yousef M. Y. Al Sabbah (120212265)
-Course: Web 3
-Instructor: Mohammed Al-Agha
+- Created Django management command to easily set up admin user
+- Added command that creates superuser with email admin@admin.com and password admin
+- Updated README.md with instructions on how to use the command
+- Added security notice about changing credentials in production

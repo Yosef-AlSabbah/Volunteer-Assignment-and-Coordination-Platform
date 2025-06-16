@@ -9,6 +9,7 @@ A comprehensive web application for volunteer coordination and management, desig
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+  - [Admin Access](#admin-access)
 - [API Documentation](#api-documentation)
   - [Authentication](#authentication)
   - [Workplaces Management](#workplaces-management)
@@ -91,6 +92,22 @@ The Volunteer Assignment and Coordination Platform is designed to streamline the
    ```
 
 6. Access the API at http://localhost:8000/
+
+### Admin Access
+
+To create an admin superuser with default credentials (email: admin@admin.com, password: admin), run:
+
+```bash
+# If using Docker
+docker-compose exec web python manage.py create_admin_user
+
+# If running locally
+python manage.py create_admin_user
+```
+
+This will create a superuser account that can be used to access the Django admin interface at `/admin`.
+
+**Note:** For production environments, please change the default admin credentials.
 
 ## API Documentation
 
