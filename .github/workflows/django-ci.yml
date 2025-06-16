@@ -28,4 +28,4 @@ jobs:
         python -m uv sync
     - name: Run Tests
       run: |
-        python manage.py test
+        uv run manage.py test
