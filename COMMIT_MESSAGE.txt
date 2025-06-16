@@ -1,6 +1,0 @@
-Fix CI workflow package discovery issue
-
-- Replace editable install with uv sync to avoid multiple top-level packages error
-- Remove the problematic `-e .` flag that triggered setuptools package discovery issue
-- Simplify dependency installation process in GitHub Actions workflow
-- Fix the build error related to 'core' and 'volunteer_platform' top-level packages
