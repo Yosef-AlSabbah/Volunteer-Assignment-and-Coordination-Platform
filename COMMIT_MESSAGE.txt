@@ -2,5 +2,5 @@ Add GitHub Actions workflow for Django CI
 
 - Set up continuous integration pipeline for Django tests
 - Configure workflow to run on push and pull requests to master branch
-- Support multiple Python versions (3.9, 3.10, 3.11, 3.13)
+- Match exact Python version (3.13.3) with Dockerfile
 - Use uv for dependency management
