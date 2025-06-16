@@ -1,6 +1,6 @@
-Add create_admin_user management command
+Add GitHub Actions workflow for Django CI
 
-- Created Django management command to easily set up admin user
-- Added command that creates superuser with email admin@admin.com and password admin
-- Updated README.md with instructions on how to use the command
-- Added security notice about changing credentials in production
+- Set up continuous integration pipeline for Django tests
+- Configure workflow to run on push and pull requests to master branch
+- Support multiple Python versions (3.9, 3.10, 3.11, 3.13)
+- Use uv for dependency management
