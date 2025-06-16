@@ -1,6 +1,6 @@
-Add GitHub Actions workflow for Django CI
+Fix CI workflow package discovery issue
 
-- Set up continuous integration pipeline for Django tests
-- Configure workflow to run on push and pull requests to master branch
-- Match exact Python version (3.13.3) with Dockerfile
-- Use uv for dependency management
+- Replace editable install with uv sync to avoid multiple top-level packages error
+- Remove the problematic `-e .` flag that triggered setuptools package discovery issue
+- Simplify dependency installation process in GitHub Actions workflow
+- Fix the build error related to 'core' and 'volunteer_platform' top-level packages
